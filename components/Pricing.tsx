@@ -11,14 +11,14 @@ import {
   Icon,
   Stack,
 } from "@chakra-ui/react";
-import { GetIcons } from "../icons/icons";
+import { CheckIcon } from "../icons/icons";
 
 export const ListItem = (props: StackProps) => {
   const { children, ...rest } = props;
   console.log(rest);
   return (
     <HStack as="li" spacing="20px" {...rest}>
-      <Icon as={GetIcons} w="22px" h="22px" />
+      <Icon as={CheckIcon} w="22px" h="22px" />
       <Text>{children}</Text>
     </HStack>
   );
