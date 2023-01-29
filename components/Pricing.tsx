@@ -19,7 +19,7 @@ export const ListItem = (props: StackProps) => {
   return (
     <HStack as="li" spacing="20px" {...rest}>
       <Icon as={CheckIcon} w="22px" h="22px" />
-      <Text>{children}</Text>
+      <Text fontSize={['sm', 'md', 'lg', 'xl']}>{children}</Text>
     </HStack>
   );
 };
@@ -27,7 +27,8 @@ export const ListItem = (props: StackProps) => {
 export default function Pricing() {
   return (
     <Box
-      maxW="994px"
+      w={[360, 600, 1024]}
+      // maxW="994px"
       margin="auto"
       mt="-180px"
       borderRadius="12px"
@@ -35,7 +36,7 @@ export default function Pricing() {
       boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)"
       textAlign="center"
     >
-      <Flex display={{ md: 'flex' }}>
+      <Flex display={{ md: "flex" }}>
         <Box bg="#F0EAFB" p="60px">
           <Text
             textAlign="center"
@@ -74,11 +75,11 @@ export default function Pricing() {
           </Button>
         </Box>
         <Box p="60px" fontSize="18px" bg="white">
-          <Text textAlign="left">
+          <Text textAlign="left" fontSize={['sm', 'md', 'lg', 'xl']}>
             Access these features when you get this pricing package for your
             business.
           </Text>
-          <Stack as="ul" spacing="20px" pt="24px">
+          <Stack as="ul" spacing="20px" pt="24px" textAlign="left">
             <ListItem>International calling and messaging API</ListItem>
             <ListItem>Additional phone numbers</ListItem>
             <ListItem>Automated messages via Zapier</ListItem>

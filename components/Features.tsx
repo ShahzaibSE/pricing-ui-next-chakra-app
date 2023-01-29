@@ -26,7 +26,8 @@ export default function Feature(props: FeatureProps) {
     <Box>
       <HStack {...rest} spacing="24px">
         <Icon as={icon} boxSize="48px" />
-        <Text textAlign="left" fontSize="18px" fontWeight="700">
+        {/* <Text textAlign="left" fontSize="18px" fontWeight="700"> */}
+        <Text textAlign="left" fontSize={['sm', 'md', 'lg', 'xl']} fontWeight="700">
           {children}
         </Text>
       </HStack>
