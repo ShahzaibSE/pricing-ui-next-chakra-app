@@ -6,7 +6,7 @@ import {
   Text,
   Flex,
   StackProps,
-  HStack,
+  HStack, Stack,
   Icon,
 } from "@chakra-ui/react";
 //Icons.
@@ -37,7 +37,7 @@ export default function Feature(props: FeatureProps) {
 export function Features() {
   return (
     <Box maxW="1024px" m="auto" pt="60px" pb="32px">
-      <HStack px="48px" spacing="20px">
+      <Stack direction={['column', 'row']} px="48px" spacing="20px" display={{md: "flex"}}>
         <Feature icon={MoneyBackGuaranteeIcon}>
           30 days money back Guarantee
         </Feature>
@@ -45,7 +45,7 @@ export function Features() {
         <Feature icon={MonthlySubscriptionIcon}>
           No monthly subscription Pay once and for all
         </Feature>
-      </HStack>
+      </Stack>
     </Box>
   );
 }

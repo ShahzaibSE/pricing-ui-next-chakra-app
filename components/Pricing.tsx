@@ -35,7 +35,7 @@ export default function Pricing() {
       boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)"
       textAlign="center"
     >
-      <Flex>
+      <Flex display={{ md: 'flex' }}>
         <Box bg="#F0EAFB" p="60px">
           <Text
             textAlign="center"
