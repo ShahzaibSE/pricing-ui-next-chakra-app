@@ -71,7 +71,7 @@ export default function Pricing() {
             // w={["282px", "md" ,"lg"]}
             w="282px"
             mt={["24px"]}
-            mx="auto"
+            mx={["-4" , "4", "5"]}
             // mt={[2, 4, 6, 8]} width='full'
           >
             Get Started
