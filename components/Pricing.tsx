@@ -68,8 +68,11 @@ export default function Pricing() {
             colorScheme="purple"
             borderRadius="8px"
             size="lg"
+            // w={["282px", "md" ,"lg"]}
             w="282px"
-            mt="24px"
+            mt={["24px"]}
+            mx="auto"
+            // mt={[2, 4, 6, 8]} width='full'
           >
             Get Started
           </Button>
